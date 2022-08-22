@@ -277,17 +277,15 @@ body .main_column-card--time strong {
 
 footer h3 {
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
+  justify-content: end;
   position: fixed;
   bottom: 0;
-  background-color: #ffffff;
+  right: 1rem;
   width: 100%;
-  border-radius: 15px 50px 30px 5px;
   font-family: "Comfortaa", cursive;
   font-size: 1.6rem;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05rem;
-  color: #000;
+  color: #fff;
 }

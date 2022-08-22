@@ -1,13 +1,11 @@
 footer {
     h3 {
         display: flex;
-        justify-content: center;
-        background-color: $color_white;
+        justify-content: end;
         position: fixed;
         bottom: 0;
-        background-color: $color_white;
+        right: 1rem;
         width: 100%;
-        border-radius: 15px 50px 30px 5px;
 
         font: {
             family: $font_family-Roboto;
@@ -16,6 +14,6 @@ footer {
             style: $font_style-normal;
         }
         letter-spacing: $font_letter-spacing;
-        color: #000;
+        color: #fff;
     }
 }
