@@ -221,6 +221,11 @@ body {
     color: #fff;
   }
 }
+@media only screen and (min-width: 600px) {
+  .header_time {
+    text-align: right;
+  }
+}
 @media only screen and (max-width: 600px) {
   .header {
     text-align: center !important;
@@ -268,4 +273,21 @@ body .main_column-card--time strong {
   font-size: 1.6rem;
   font-weight: 700;
   font-style: normal;
+}
+
+footer h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 15px 50px 30px 5px;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  color: #000;
 }

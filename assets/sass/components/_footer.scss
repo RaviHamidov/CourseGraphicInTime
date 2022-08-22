@@ -1,0 +1,21 @@
+footer {
+    h3 {
+        display: flex;
+        justify-content: center;
+        background-color: $color_white;
+        position: fixed;
+        bottom: 0;
+        background-color: $color_white;
+        width: 100%;
+        border-radius: 15px 50px 30px 5px;
+
+        font: {
+            family: $font_family-Roboto;
+            size: $font_size-secondary;
+            weight: $font_weight-primary;
+            style: $font_style-normal;
+        }
+        letter-spacing: $font_letter-spacing;
+        color: #000;
+    }
+}
