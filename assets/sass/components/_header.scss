@@ -55,3 +55,9 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        text-align: center !important;
+    }
+}

@@ -221,6 +221,11 @@ body {
     color: #fff;
   }
 }
+@media only screen and (max-width: 600px) {
+  .header {
+    text-align: center !important;
+  }
+}
 .main_column-title {
   font-family: "Comfortaa", cursive;
   font-size: 1.6rem;
