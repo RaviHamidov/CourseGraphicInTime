@@ -25,3 +25,31 @@
         color: #fff;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    &_title {
+        font: {
+            family: $font_family-Roboto;
+            size: $font_size-secondary;
+            weight: $font_weight-primary;
+            style: $font_style-normal;
+        }
+
+        line-height: $font_line-height-primary;
+        letter-spacing: $font_letter-spacing;
+        color: #fff;
+    }
+
+    &_time {
+        font: {
+            family: $font_family-Roboto;
+            size: $font_size-secondary;
+            weight: $font_weight-primary;
+            style: $font_style-normal;
+        }
+
+        line-height: $font_line-height-primary;
+        letter-spacing: $font_letter-spacing;
+        color: #fff;
+    }
+}

@@ -10,12 +10,12 @@
         var currentTime = new Date(),
             d = checkTime(currentTime.getDay()),
             y = checkTime(currentTime.getFullYear()),
-            mont = checkTime(currentTime.getMonth()),
+            m = checkTime(currentTime.getMonth()),
             h = checkTime(currentTime.getHours()),
             min = checkTime(currentTime.getMinutes()),
             s = checkTime(currentTime.getSeconds());
         document.getElementById("header_time").innerHTML =
-            y + "/" + mont + "/" + d + " | " + h + ":" + min + ":" + s;
+            y + "/" + m + "/" + d + " | " + h + ":" + min + ":" + s;
         t = setTimeout(function () {
             startTime();
         }, 500);
@@ -215,4 +215,4 @@ function timedRefresh(timeoutPeriod) {
     setTimeout("location.reload(true);", timeoutPeriod);
 }
 
-window.onload = timedRefresh(1800000);
+window.onload = timedRefresh(300000);
