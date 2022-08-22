@@ -210,3 +210,9 @@ refreshStatus();
 
 // updates every 1 seconds
 setInterval(refreshStatus, 1000);
+
+function timedRefresh(timeoutPeriod) {
+    setTimeout("location.reload(true);", timeoutPeriod);
+}
+
+window.onload = timedRefresh(1800000);
