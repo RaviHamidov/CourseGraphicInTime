@@ -1,0 +1,42 @@
+body {
+    .main {
+        &_column {
+            &-card {
+                font: {
+                    family: $font_family-Roboto;
+                    size: $font_size-secondary;
+                    weight: $font_weight-secondary;
+                    style: $font_style-normal;
+                }
+                line-height: $font_line-height-secondary;
+                letter-spacing: $font_letter-spacing;
+                color: $color_secondary-default;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+                &--default {
+                    background: $color_white;
+                }
+
+                &--active {
+                    background: $color_secondary-default;
+                    color: $color_white;
+                }
+
+                &--time {
+                    strong {
+                        font: {
+                            family: $font_family-Roboto;
+                            size: $font_size-secondary;
+                            weight: $font_weight-primary;
+                            style: $font_style-normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

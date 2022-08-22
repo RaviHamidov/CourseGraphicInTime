@@ -1,0 +1,246 @@
+/*=======================================
+                 Base 
+=======================================*/
+/*=======================================
+              Reset - Start
+=======================================*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=======================================
+              Reset - End
+=======================================*/
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* font-size: 16px; */
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+/*=======================================
+            Typography - Start
+=======================================*/
+/*=======================================
+       Comfortaa - from Google Font
+=======================================*/
+/*=======================================
+   Font Details - from FrontEnd Mentor
+=======================================*/
+/*=======================================
+             Typography - End
+=======================================*/
+/*=======================================
+            Colors - Start
+=======================================*/
+/*=======================================
+            Colors - End
+=======================================*/
+/*=======================================
+                Components
+=======================================*/
+.header_title {
+  font-family: "Comfortaa", cursive;
+  font-size: 4.1rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 6rem;
+  letter-spacing: 0.05rem;
+  color: #fff;
+}
+.header_time {
+  font-family: "Comfortaa", cursive;
+  font-size: 4.1rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 6rem;
+  letter-spacing: 0.05rem;
+  color: #fff;
+}
+
+.main_column-title {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: #ffffff;
+  background: #2f65f8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+body .main_column-card {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: #2f65f8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+body .main_column-card--default {
+  background: #ffffff;
+}
+body .main_column-card--active {
+  background: #2f65f8;
+  color: #ffffff;
+}
+body .main_column-card--time strong {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: normal;
+}
