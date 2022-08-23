@@ -8,9 +8,9 @@
 
     function startTime() {
         var currentTime = new Date(),
-            d = checkTime(currentTime.getDay()),
+            d = checkTime(currentTime.getDate()),
             y = checkTime(currentTime.getFullYear()),
-            m = checkTime(currentTime.getMonth()),
+            m = checkTime(currentTime.getMonth() + 1),
             h = checkTime(currentTime.getHours()),
             min = checkTime(currentTime.getMinutes()),
             s = checkTime(currentTime.getSeconds());
