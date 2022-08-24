@@ -277,10 +277,9 @@ body .main_column-card--time strong {
 
 footer h3 {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  right: 1rem;
   width: 100%;
   font-family: "Comfortaa", cursive;
   font-size: 1.6rem;
