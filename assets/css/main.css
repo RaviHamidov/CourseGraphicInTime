@@ -239,7 +239,7 @@ body {
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
   color: #ffffff;
-  background: #2f65f8;
+  background: #314cce;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -254,7 +254,7 @@ body .main_column-card {
   font-style: normal;
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
-  color: #2f65f8;
+  color: #314cce;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -265,7 +265,7 @@ body .main_column-card--default {
   background: #ffffff;
 }
 body .main_column-card--active {
-  background: #2f65f8;
+  background: #314cce;
   color: #ffffff;
 }
 body .main_column-card--time strong {
@@ -273,6 +273,23 @@ body .main_column-card--time strong {
   font-size: 1.6rem;
   font-weight: 700;
   font-style: normal;
+}
+
+body .main_column-card--preparation {
+  background: #ffa200;
+  color: #ffffff;
+}
+body .main_column-card--default {
+  background: #ffffff;
+  color: #314cce;
+}
+body .main_column-card--active {
+  background: #04ff66;
+  color: #ffffff;
+}
+body .main_column-card--end {
+  background: #ff1000;
+  color: #ffffff;
 }
 
 footer h3 {

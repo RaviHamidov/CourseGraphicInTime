@@ -10,7 +10,7 @@ body {
                 }
                 line-height: $font_line-height-secondary;
                 letter-spacing: $font_letter-spacing;
-                color: $color_secondary-default;
+                color: $color_primary-default;
                 border-radius: 10px;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
@@ -22,7 +22,7 @@ body {
                 }
 
                 &--active {
-                    background: $color_secondary-default;
+                    background: $color_primary-default;
                     color: $color_white;
                 }
 
