@@ -3,22 +3,22 @@ body {
         &_column {
             &-card {
                 &--preparation {
-                    background: $color_preparation-default;
+                    background: $color_preparation-default--bg;
                     color: $color_white;
                 }
 
                 &--default {
-                    background: $color_white;
+                    background: $color_white--bg;
                     color: $color_primary-default;
                 }
 
                 &--active {
-                    background: $color_active-default;
+                    background: $color_active-default--bg;
                     color: $color_white;
                 }
 
                 &--end {
-                    background: $color_end-default;
+                    background: $color_end-default--bg;
                     color: $color_white;
                 }
             }

@@ -1,7 +1,7 @@
 .header {
     &_title {
         font: {
-            family: $font_family-Roboto;
+            family: $font_family-Inter;
             size: $font_size-primary;
             weight: $font_weight-primary;
             style: $font_style-normal;
@@ -14,7 +14,7 @@
 
     &_time {
         font: {
-            family: $font_family-Roboto;
+            family: $font_family-Inter;
             size: $font_size-primary;
             weight: $font_weight-primary;
             style: $font_style-normal;
@@ -30,7 +30,7 @@
     .header {
         &_title {
             font: {
-                family: $font_family-Roboto;
+                family: $font_family-Inter;
                 size: $font_size-secondary;
                 weight: $font_weight-primary;
                 style: $font_style-normal;
@@ -43,7 +43,7 @@
 
         &_time {
             font: {
-                family: $font_family-Roboto;
+                family: $font_family-Inter;
                 size: $font_size-secondary;
                 weight: $font_weight-primary;
                 style: $font_style-normal;

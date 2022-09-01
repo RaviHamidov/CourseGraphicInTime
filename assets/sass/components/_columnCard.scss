@@ -3,7 +3,7 @@ body {
         &_column {
             &-card {
                 font: {
-                    family: $font_family-Roboto;
+                    family: $font_family-Inter;
                     size: $font_size-secondary;
                     weight: $font_weight-secondary;
                     style: $font_style-normal;
@@ -22,16 +22,16 @@ body {
                 }
 
                 &--active {
-                    background: $color_primary-default;
+                    background: $color_primary-default--bg;
                     color: $color_white;
                 }
 
                 &--time {
                     strong {
                         font: {
-                            family: $font_family-Roboto;
+                            family: $font_family-Inter;
                             size: $font_size-secondary;
-                            weight: $font_weight-primary;
+                            weight: $font_weight-primary--light;
                             style: $font_style-normal;
                         }
                     }
