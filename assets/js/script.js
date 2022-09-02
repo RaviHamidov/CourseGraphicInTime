@@ -97,7 +97,7 @@ const refreshStatus = () => {
             element.classList.remove("main_column-card--end");
             element.classList.add("main_column-card--active");
         } else if (
-            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.2 &&
+            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.05 &&
             convertedCurrentTime >= convertedEndTime
         ) {
             element.classList.remove("main_column-card--preparation");
