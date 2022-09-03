@@ -66,15 +66,15 @@ function refreshStatus() {
         let convertedCurrentTime = timeStringToFloat(currentTime);
 
         if (
-            convertedCurrentTime < convertedStartTime - 0.05 ||
-            convertedCurrentTime > convertedEndTime + 0.17
+            convertedCurrentTime < convertedStartTime - 0.15 ||
+            convertedCurrentTime > convertedEndTime + 0.15
         ) {
             element.classList.remove("main_column-card--preparation");
             element.classList.remove("main_column-card--active");
             element.classList.remove("main_column-card--end");
             element.classList.add("main_column-card--default");
         } else if (
-            Math.abs(convertedStartTime - convertedCurrentTime) <= 0.17 &&
+            Math.abs(convertedStartTime - convertedCurrentTime) <= 0.15 &&
             convertedCurrentTime < convertedStartTime
         ) {
             element.classList.remove("main_column-card--default");
@@ -90,7 +90,7 @@ function refreshStatus() {
             element.classList.remove("main_column-card--end");
             element.classList.add("main_column-card--active");
         } else if (
-            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.17 &&
+            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.15 &&
             convertedCurrentTime >= convertedEndTime
         ) {
             element.classList.remove("main_column-card--preparation");
