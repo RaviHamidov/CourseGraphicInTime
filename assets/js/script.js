@@ -40,13 +40,6 @@ let currentTime = dayTime.toLocaleTimeString("it-IT", {
 });
 
 /*=================================
-         Page's Reload Settings
-==================================*/
-function timedRefresh(timeoutPeriod) {
-    setTimeout("location.reload(true);", timeoutPeriod);
-}
-
-/*=================================
          Time convert to Num
 ==================================*/
 function timeStringToFloat(time) {
@@ -56,8 +49,8 @@ function timeStringToFloat(time) {
     return hours + minutes / 60;
 }
 
-const refreshStatus = () => {
-    const weekDay = document.getElementsByClassName(currentDay);
+function refreshStatus() {
+    const weekDay = document.body.getElementsByClassName(currentDay);
     for (var i = 0; i < weekDay.length; i++) {
         let element = weekDay[i];
 
@@ -73,15 +66,15 @@ const refreshStatus = () => {
         let convertedCurrentTime = timeStringToFloat(currentTime);
 
         if (
-            convertedCurrentTime < convertedStartTime - 0.25 ||
-            convertedCurrentTime > convertedEndTime + 0.2
+            convertedCurrentTime < convertedStartTime - 0.05 ||
+            convertedCurrentTime > convertedEndTime + 0.17
         ) {
             element.classList.remove("main_column-card--preparation");
             element.classList.remove("main_column-card--active");
             element.classList.remove("main_column-card--end");
             element.classList.add("main_column-card--default");
         } else if (
-            Math.abs(convertedStartTime - convertedCurrentTime) <= 0.25 &&
+            Math.abs(convertedStartTime - convertedCurrentTime) <= 0.17 &&
             convertedCurrentTime < convertedStartTime
         ) {
             element.classList.remove("main_column-card--default");
@@ -97,7 +90,7 @@ const refreshStatus = () => {
             element.classList.remove("main_column-card--end");
             element.classList.add("main_column-card--active");
         } else if (
-            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.05 &&
+            Math.abs(convertedCurrentTime - convertedEndTime) <= 0.17 &&
             convertedCurrentTime >= convertedEndTime
         ) {
             element.classList.remove("main_column-card--preparation");
@@ -106,19 +99,8 @@ const refreshStatus = () => {
             element.classList.add("main_column-card--end");
         }
     }
+}
+
+window.onload = () => {
+    setInterval("refreshStatus()", 1000);
 };
-
-// run when starting
-9;
-window.onload = function () {
-    refreshStatus();
-    setInterval(refreshStatus, 1000);
-};
-
-// refresh status every 1 second
-// window.onload = timedRefresh(60000);
-
-// document.querySelector(".main_column-card").onload = timedRefresh(1000);
-
-// const container = document.getElementById('container')
-// container.querySelector();
