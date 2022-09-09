@@ -53,8 +53,9 @@ function getCurrentTime() {
          Time convert to Num
 ==================================*/
 function timeStringToFloat(time) {
-    const hours = time.slice(0, 2);
-    const minutes = time.slice(3, 5);
+    const [h, m] = time.split(':');
+    const hours = parseInt(h, 10);
+    const minutes = m ? parseInt(m, 10) : 0;
     return hours * 60 + minutes;
 }
 
@@ -88,16 +89,11 @@ function refreshStatus() {
 
         const isAboutToEnd =
             Math.abs(convertedCurrentTime - convertedEndTime) <=
-                preparationThreshold &&
-            convertedCurrentTime <= convertedEndTime;
+                preparationThreshold && convertedCurrentTime < convertedEndTime;
 
         const isRunningCurrently =
             convertedStartTime <= convertedCurrentTime &&
             convertedEndTime > convertedCurrentTime;
-
-        const isNotLessonCurrently =
-            convertedCurrentTime < convertedStartTime ||
-            convertedEndTime < convertedCurrentTime;
 
         if (isAboutToStart) {
             course.classList.remove('main_column-card--default');
@@ -114,7 +110,7 @@ function refreshStatus() {
             course.classList.remove('main_column-card--default');
             course.classList.remove('main_column-card--end');
             course.classList.add('main_column-card--active');
-        } else if (isNotLessonCurrently) {
+        } else {
             course.classList.remove('main_column-card--preparation');
             course.classList.remove('main_column-card--active');
             course.classList.remove('main_column-card--end');
@@ -175,7 +171,7 @@ function getRowMarkup(scheduleItem) {
 }
 
 /*=================================
-      Application Entry Point
+          Application Entry Point
 ==================================*/
 window.onload = () => {
     fetchCourseSchedule()
