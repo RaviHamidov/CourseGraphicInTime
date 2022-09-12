@@ -13,12 +13,6 @@
             "endsAt": "21:00"
         },
         {
-            "group": "F/S_2",
-            "room": 4,
-            "startsAt": "19:00",
-            "endsAt": "21:00"
-        },
-        {
             "group": "Dev/Ops_2",
             "room": 3,
             "startsAt": "19:00",
@@ -37,12 +31,6 @@
             "room": 3,
             "startsAt": "15:30",
             "endsAt": "18:30"
-        },
-        {
-            "group": "F/S_2",
-            "room": 4,
-            "startsAt": "18:40",
-            "endsAt": "21:00"
         },
         {
             "group": "M/D_1",
@@ -83,12 +71,6 @@
             "room": 2,
             "startsAt": "18:00",
             "endsAt": "21:00"
-        },
-        {
-            "group": "F/S_2",
-            "room": 4,
-            "startsAt": "19:00",
-            "endsAt": "21:00"
         }
     ],
     [
@@ -97,12 +79,6 @@
             "room": 2,
             "startsAt": "14:00",
             "endsAt": "17:00"
-        },
-        {
-            "group": "F/S_2",
-            "room": 4,
-            "startsAt": "19:00",
-            "endsAt": "21:00"
         },
         {
             "group": "Dev/Ops_2",
