@@ -142,7 +142,7 @@ function fillMarkup(schedule) {
 function getColumnMarkup(daySchedule, index) {
     const weekDay = weekDays[index];
     return `
-        <div id="${weekDay}" class="main_column col-lg-2 col-md-4 col-sm-4 col-12">
+        <div id="${weekDay}" class="main_column col-lg-auto">
             <div class="main_column-title d-flex justify-content-center mx-2 mt-2 p-2">
                 ${weekDay}
             </div>
