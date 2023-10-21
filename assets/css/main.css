@@ -360,4 +360,6 @@ body .main_column-card--end {
 }
 .footer h3 a {
     margin: 0 0 0 0.5rem;
+    text-decoration: none;
+    color: #fff;
 }
